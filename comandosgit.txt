@@ -1,3 +1,10 @@
+#criar autenticacao por chave ssh
+ssh-keygen -t ed25519 -C "usuario@email.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+#depois ir em settings no gihub e adicionar o conteudo da chave .pub
+cat ~/.ssh/id_ed25519.pub
+#descricao de usuario
 git config --global user.name "seunome"
 git config --global user.email "login@email.com"
 git init
