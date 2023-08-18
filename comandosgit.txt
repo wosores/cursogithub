@@ -1,0 +1,13 @@
+git config --global user.name "seunome"
+git config --global user.email "login@email.com"
+git init
+git add .
+git diff
+git reset HEAD arquivo
+git commit -m "Descrição"
+git reset --soft "hash do arquivo vista no git log"
+#Antes do push criar repo no github
+git remote add origin https://github.com/usuario/projeto
+#definir o branch
+git push --set-upstream origin master
+
