@@ -17,6 +17,30 @@ git reset --soft "hash do arquivo vista no git log"
 git remote add origin https://github.com/usuario/projeto
 #definir o branch
 git push --set-upstream origin master
+git push origin master  #para atualizar o arquivo caso use o branch master
 #verfificar
 git remote
 git remote -v
+#caso queira clonar outro repositorio exemplo de um projeto opensource, e só pode enviar se o repo for seu
+git clone git@github.com:usuario/cursogithub.git
+#outra opção é usar o fork mas é feito pela interface do github, nesse caso vc consegue alterar e enviar as modificacoes
+
+
+#BRANSH é um ponteiro movel que leva a um commit
+#Usa-se para não modificar o master exemplo
+#cria um bransh a parte do master
+#cada pessoa pode estar trabalhando em um bransh, evitando conflitos
+#criando bransh
+git checkout -b testegithub
+git branch                #mostra os bransh
+git checout testegithub   #para ir para o bransh
+git bransh -D testegithub #apaga o bransh
+#unindo bransh ou seja passando as alteracoes do testegithub para o master
+#desvantagem que cria um commit novo, e pode poluir o historico
+#merge ou rebase
+#merg cria um commit novo para juntar as diferencas
+#rebase (commit linear)
+#uma saida é commit linear, sempre em sequencia linear, mas perde a ordem cronologica
+
+
+
